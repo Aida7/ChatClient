@@ -1,0 +1,7 @@
+c:\users\садыковаа\source\repos\ClientApp\ClientApp\bin\Debug\ClientApp.exe.config
+c:\users\садыковаа\source\repos\ClientApp\ClientApp\bin\Debug\ClientApp.exe
+c:\users\садыковаа\source\repos\ClientApp\ClientApp\bin\Debug\ClientApp.pdb
+c:\users\садыковаа\source\repos\ClientApp\ClientApp\obj\Debug\ClientApp.csprojResolveAssemblyReference.cache
+c:\users\садыковаа\source\repos\ClientApp\ClientApp\obj\Debug\ClientApp.csproj.CoreCompileInputs.cache
+c:\users\садыковаа\source\repos\ClientApp\ClientApp\obj\Debug\ClientApp.exe
+c:\users\садыковаа\source\repos\ClientApp\ClientApp\obj\Debug\ClientApp.pdb

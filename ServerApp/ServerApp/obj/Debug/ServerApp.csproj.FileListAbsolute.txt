@@ -1,0 +1,7 @@
+c:\users\садыковаа\source\repos\ServerApp\ServerApp\bin\Debug\ServerApp.exe.config
+c:\users\садыковаа\source\repos\ServerApp\ServerApp\bin\Debug\ServerApp.exe
+c:\users\садыковаа\source\repos\ServerApp\ServerApp\bin\Debug\ServerApp.pdb
+c:\users\садыковаа\source\repos\ServerApp\ServerApp\obj\Debug\ServerApp.csprojResolveAssemblyReference.cache
+c:\users\садыковаа\source\repos\ServerApp\ServerApp\obj\Debug\ServerApp.csproj.CoreCompileInputs.cache
+c:\users\садыковаа\source\repos\ServerApp\ServerApp\obj\Debug\ServerApp.exe
+c:\users\садыковаа\source\repos\ServerApp\ServerApp\obj\Debug\ServerApp.pdb
