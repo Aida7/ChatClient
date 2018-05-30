@@ -14,11 +14,10 @@ namespace ClientApp
         [JsonProperty("text")]
         public string Text { get; set; }
         [JsonProperty("time")]
-        public DateTime Time { get; set; }
-        public ChatData()
-        {
-            Sender="Name1";
-        }
+        public DateTime SendDate { get; set; }
+        [JsonProperty("file")]
+        public byte[] File { get; set; }
+        public string FilePath { get; set; }
     }
     
 }

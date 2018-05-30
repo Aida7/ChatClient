@@ -1,13 +1,14 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 namespace ClientApp
 {
     class Program
@@ -27,9 +28,16 @@ namespace ClientApp
                 ChatData chatData = new ChatData(); 
                 var jsonConvert = JsonConvert.DeserializeObject<ChatData>(chatData.Sender);
                 socket.Send(Encoding.Default.GetBytes(jsonConvert.Sender));
+
+                var jsonConvert1 = JsonConvert.DeserializeObject<ChatData>(chatData.Text);
+                byte[] byts = Encoding.Default.GetBytes(jsonConvert1.Text);
+                socket.Send(byts);
                 
-                StringBuilder stringBuilder = new StringBuilder();
-                string text = Console.ReadLine();
+
+                Console.WriteLine("Отправка Файла");
+                string filePath = Console.ReadLine();
+                chatData.FilePath = filePath;
+                socket.Send(byts);
             }
             catch (SocketException ex)
             {
@@ -40,7 +48,23 @@ namespace ClientApp
                 socket.Close();
             }
             Console.ReadLine();
+        }
+        public byte[] ToDo()
+        {
+            using (var openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "Comma Separated Value(*.*) | *.*";
+                FileStream fs;
 
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    fs = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read);
+                    byte[] readBuf = new byte[fs.Length]; 
+                    return readBuf;
+                }
+               
+            }
+            
         }
     }
 }
